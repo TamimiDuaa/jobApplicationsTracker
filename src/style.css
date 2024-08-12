@@ -201,7 +201,7 @@ body{
 .changeImages{
     width:50vw;
     height:50vh;
- 
+    margin-top: 10vh;
 }
 .animalsImages{
     width:70vw;
@@ -227,4 +227,154 @@ body{
 .image:active{
     transform: translateY(5px);
     box-shadow: none;
+}
+
+/* change theme color */
+.colorsDiv{
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    height: 40%;
+    width:95%;
+    
+   margin-top: 5vh;
+
+}
+.colorCompination{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin-bottom: 10vw;
+    height: 70%;
+   
+}
+.color{
+    
+    margin:1.2rem;
+    width:30%;
+    height: 80%;
+    display: flex;
+    
+}
+
+.fc{
+    width:30%;
+    height: 80px;
+    
+}
+
+    
+.fc1{
+    background-color:#edafb8 ;
+    border-radius: 12px 0px 0px 12px;
+}
+.fc2{
+    background-color: #f7e1d7;
+}
+.fc3{
+    background-color: #dedbd2;
+}
+.fc4{
+    background-color: #b0c4b1;
+}
+.fc5{
+    background-color: #4a5759;
+    border-radius: 0px 12px 12px 0px;
+}
+
+
+.sc{
+    width:30%;
+    height: 80px;
+}
+.sc1{
+    background-color:#22223b ;
+    border-radius: 12px 0px 0px 12px;
+
+}
+.sc2{
+    background-color: #4a4e69;
+}
+.sc3{
+    background-color: #9a8c98;
+}
+.sc4{
+    background-color: #c9ada7;
+}
+.sc5{
+    background-color: #f2e9e4;
+    border-radius: 0px 12px 12px 0px;
+}
+.thc{
+    width:20%;
+    height: 80px;
+   
+}
+.thc1{
+    background-color: #f4f1de;
+    border-radius: 12px 0px 0px 12px;
+
+}
+.thc2{
+    background-color: #e07a5f;
+}
+.thc3{
+    background-color: #3d405b;
+}
+.thc4{
+    background-color: #81b29a;
+}
+.thc5{
+    background-color: #f2cc8f;
+    border-radius: 0px 12px 12px 0px;
+}
+
+.foc{
+    width:20%;
+    height: 80px;
+   
+}
+.foc1{
+    background-color: #9a756f;
+    border-radius: 12px 0px 0px 12px;
+
+}
+.foc2{
+    background-color: #d2aba4;
+}
+.foc3{
+    background-color: #edcfc7;
+}
+.foc4{
+    background-color: #aec2a9;
+}
+.foc5{
+    background-color: #5d785e;
+    border-radius: 0px 12px 12px 0px;
+}
+
+.fic{
+    width:20%;
+    height: 80px;
+   
+}
+.fic1{
+    background-color: #0a0908;
+    border-radius: 12px 0px 0px 12px;
+
+}
+.fic2{
+    background-color: #49111c;
+}
+.fic3{
+    background-color: #f2f4f3;
+}
+.fic4{
+    background-color: #a9927d;
+}
+.fic5{
+    background-color: #5e503f;
+    border-radius: 0px 12px 12px 0px;
+
 }
