@@ -6,9 +6,10 @@
         <title>Dashboard</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="src/style.css">
+        <link rel="stylesheet" href="style.css">
         <!-- to apply Chart.js to the page -->
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="https://kit.fontawesome.com/ce6c91e8da.js" crossorigin="anonymous"></script>
     </head>
     <body>
       <!-- Side bar -->
@@ -19,8 +20,8 @@
             </div>
             <ul>
                 <li class="links"><a href="index.html">Home</a></li>
-                <li class="links"><a href="src/applications.html">My Applications</a></li>
-                <li class="links"><a href="src/settings.html">Settings</a></li>
+                <li class="links"><a href="applications.html">My Applications</a></li>
+                <li class="links" id="settings"><a href="settings.html">Settings</a></li>
                 <li class="links"><a href="">Logout</a></li>
             </ul>
         </nav>
@@ -31,8 +32,8 @@
                  This tool is designed to help you keep track of all your job applications in one organized place.</h3>
             <h3>Happy job hunting, and good luck on your journey to success! 🚀</h3>  
             <div class="addNewApp">
-                <button>Add new Application</button>
-                <button>View All Applications</button>
+                <button class="addNewAppBtn">Add new Application</button>
+                <button href="applications.html">View All Applications</button>
             </div>
             <div class="contents">
                 <div class="calendar">
@@ -103,46 +104,7 @@
             
         </main>
         <script src="app.js" async defer></script>
-        <script>
-              
-  const ctx = document.getElementById('myChart');
-
-new Chart(ctx, {
-  type: 'bar',
-  data: {
-    labels: ['March', 'April', 'May', 'June', 'July','August'],
-    datasets: [{
-      label: '# of applications',
-      data: [2, 19, 4, 3, 2, 10],
-      backgroundColor: [ // Custom background colors for the bars
-        'rgba(255, 99, 132, 0.2)',
-        'rgba(54, 162, 235, 0.2)',
-        'rgba(255, 206, 86, 0.2)',
-        'rgba(75, 192, 192, 0.2)',
-        'rgba(153, 102, 255, 0.2)',
-        'rgba(255, 159, 64, 0.2)'
-    ],
-    borderColor: [ // Custom border colors for the bars
-        'rgba(255, 99, 132, 1)',
-        'rgba(54, 162, 235, 1)',
-        'rgba(255, 206, 86, 1)',
-        'rgba(75, 192, 192, 1)',
-        'rgba(153, 102, 255, 1)',
-        'rgba(255, 159, 64, 1)'
-    ],
-      borderWidth: 0.2
-    }]
-  },
-  options: {
-    scales: {
-      y: {
-        beginAtZero: true
-      }
-    }
-  }
-});
-
-        </script>
+        
         
     </body>
 </html>

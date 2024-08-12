@@ -378,3 +378,130 @@ body{
     border-radius: 0px 12px 12px 0px;
 
 }
+
+
+
+/* My Application Page */
+
+table {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+/* Table Container */
+.table-container {
+    width: 80%;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Heading */
+.table-title{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    height: 10vh;
+}
+
+.table-title h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+  
+}
+.addNewAppBtn{
+    height: 50%;
+    background-color: var(--weekday-bg);
+    border-radius: 20px;
+    box-shadow:5px 5px #698160;
+    transition: all 0.4s ease;
+    margin-top: 1rem;
+}
+
+.addNewAppBtn:hover{
+    cursor: pointer;
+}
+.addNewAppBtn:active{
+    cursor: pointer;
+    transform: translateY(3px);
+    box-shadow: none;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: var(--green);
+    color: var(--light-green);
+    font-weight: bold;
+}
+
+
+
+tbody tr:hover {
+    background-color: var(--weekday-bg);
+    cursor: pointer;
+}
+
+
+/* form */
+
+.formBody {
+    width: 80%;
+    height: 90%;
+    max-width: 600px;
+    margin: 2rem auto;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.formBody h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.submitBtn {
+    width: 100%;
+    padding: 1rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.submitBtn:hover {
+    background-color: #0056b3;
+}
