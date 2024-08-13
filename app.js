@@ -212,7 +212,7 @@ const animalDiv = document.querySelector(".animalsImages");
   
   function changeProfile(url){
     let profilePic =  document.querySelector(".profilePic");
-    profilePic.src ="/images/animals/"+url+".jpg";
+    profilePic.src ="./images/animals/"+url+".jpg";
   
   }
 
