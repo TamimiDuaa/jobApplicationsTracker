@@ -202,7 +202,7 @@ const animalDiv = document.querySelector(".animalsImages");
   for(let i=1;i<=16;i++){
 
     let img = document.createElement("img");
-    let URL = `./../images/animals/${i}.jpg`;
+    let URL = `images/animals/${i}.jpg`;
     img.src = URL;
     img.setAttribute('onclick','changeProfile('+i+')');
     img.classList.add("image");
