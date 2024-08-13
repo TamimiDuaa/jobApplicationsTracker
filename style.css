@@ -76,6 +76,7 @@ body{
     
     
 }
+
 .addNewApp button:hover{
     cursor: pointer;
 }
@@ -84,7 +85,10 @@ body{
     transform: translateY(3px);
     box-shadow: none;
 }
-
+.viewAppsBtn{
+    text-decoration: none;
+    color: black;
+}
 
     /* Calender */
 
