@@ -392,6 +392,9 @@ table {
 }
 
 /* Table Styling */
+.table-container{
+    height: 100vh;
+}
 table {
     width: 100%;
     border-collapse: collapse;
@@ -446,6 +449,8 @@ input, select, textarea {
     margin: auto;
     margin-top: -1rem;
     border: 1px solid #ccc;
+   background-color: #edeae9;
+
     border-radius: 4px;
     font-size: 1rem;
 }
