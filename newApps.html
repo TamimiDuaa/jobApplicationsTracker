@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Dashboard</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <!-- to apply Chart.js to the page -->
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="https://kit.fontawesome.com/ce6c91e8da.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+      <!-- Side bar -->
+        <nav class="side-nav">
+            <!-- profile picture -->
+            <div class="profilePicDiv">
+                <img src="https://t3.ftcdn.net/jpg/05/68/07/34/360_F_568073453_vzLfGxX9icQdFuql0M0WCyTdQGZowtYp.jpg" class="profilePic">
+            </div>
+            <ul>
+                <li class="links"><a href="index.html">Home</a></li>
+                <li class="links"><a href="newApps.html">Add new Application</a></li>
+                <li class="links"><a href="applications.html">My Applications</a></li>
+                <li class="links" id="settings"><a href="settings.html">Settings</a></li>
+                <li class="links"><a href="">Logout</a></li>
+            </ul>
+        </nav>
+        <!-- contain the application form  -->
+        <main class="main-content">
+            <section class="formBody">
+                <h2>Job Application Form</h2>
+                <form class="appForm">
+                    <!-- Company Name Input -->
+                    <label for="CompanyName">Company Name: <span class="req">*</span></label>
+                    <input type="text" name="CompanyName" id="CompanyName" required>
+                    <br><br>
+
+                    <!-- Company Website URL  -->
+                    <label for="CompanyURL">Company Website: <span class="req">*</span></label>
+                    <input type="text" name="CompanyURL" id="CompanyURL" required pattern="/^(https?:\/\/)?(www\.)?[a-zA-Z0-9-]{1,63}\.[a-zA-Z]{2,6}(\/[\w\-\.~:?#\[\]@!$&'()*+,;=]*)?$/">
+                    <br><br>
+
+                    <!-- Job Position -->
+                    <label for="position">Job Position: <span class="req">*</span></label>
+                    <input type="text" name="position" id="position" required>
+                    <br><br>
+
+                    <!-- Job Description -->
+                    <label for="description">Job Description: <span class="req">*</span></label>
+                    <textarea row="10" minlength="100" required placeholder="The Job Description..." id="description"></textarea>
+                    <br><br>
+
+                    <!-- Application Date -->
+                    <label for="appliedDate">Application Date: <span class="req">*</span></label>
+                    <input type="date" name="appliedDate" id="appliedDate" required >
+                    <br><br>
+
+                    <!-- Application Status -->
+                    <label for="appStatus">Application Status: <span class="req">*</span></label>
+                    <select id="appStatus" name="appStatus" required>
+                        <option value="applied">Applied</option>
+                        <option value="interviewScheduled">Interview Scheduled</option>
+                        <option value="OfferReceived">Offer Received</option>
+                        <option value="Rejected">Rejected</option>
+                        <option value="Accepted">Accepted</option>
+                    </select>
+                    <br><br>
+
+                    <!--Notes -->
+                    <label for="Notes">Notes: <span id="optionalNotes">(Optional)</span></label>
+                    <textarea id="Notes"></textarea>
+                    <br><br>
+
+                    <!-- submit button -->
+                     <input type="submit" id="submitBtn" name="submit" value="add new Application">
+                     <br><br>
+
+                </form>
+
+
+            </section>
+            
+        </main>
+        <script src="app.js" async defer></script>
+        
+        
+    </body>
+</html>

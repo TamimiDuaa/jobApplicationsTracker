@@ -4,6 +4,7 @@
     --weekday-bg:#a3ca8b;
     --light-green:rgb(164, 201, 169);
     --dark-green:rgb(1, 34, 5);
+    --background: rgb(222, 210, 195);
 }
 
 body{
@@ -30,26 +31,36 @@ body{
 }
 .main-content{
     background-color: rgb(222, 210, 195);
-    height: fit-content;
-    width: 81%;
-    margin-left:auto ;
     
+    width: 81%;
+    height: fit-content;
+    margin-left:auto;
+    /* padding-top: 3rem; */
     padding-left: 3rem;
 }
-.contents{
+.home-content{
+    width:90%;
+    height:96.5vh;
+    margin-top:5rem;
+    
+    margin-left: auto;
+}
+/* .contents{
     width:90%;
     height: fit-content;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-}
-.title{
-    padding: 20px;
-}
+} */
+/* .title{
+    /* padding: 20px; */
+    
+/* }  */
+
 .introducing{
     width:85%;
     height: 30%;
-    padding: 10px;
+    padding-top: 10px;
     
 }
 .introducing + h3{
@@ -57,13 +68,12 @@ body{
 }
 
 .addNewApp{
-    width:85%;
+    width:60%;
     height: 15%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    margin-bottom: 3rem;
+   
 }
 .addNewApp button{
     background-color: var(--light-green);
@@ -72,9 +82,6 @@ body{
     border-radius: 20px;
     box-shadow:5px 5px #698160;
     transition: all 0.4s ease;
- 
-    
-    
 }
 
 .addNewApp button:hover{
@@ -90,57 +97,7 @@ body{
     color: black;
 }
 
-    /* Calender */
 
-.calendar {
-    width: 30vw;
-    background-color: rgb(245, 238, 238);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    overflow: hidden;
-}
-
-.month {
-    background-color: var(--green);
-    color: var(--light-green);
-    padding: 0.3rem;
-    text-align: center;
-}
-.weekdays{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-.days {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.weekdays div, .days div {
-    width: 14.28%;
-    padding: 7px;
-    text-align: center;
-}
-
-.weekdays {
-    background-color: var(--weekday-bg);
-}
-
-.days div {
-    padding: 10px;
-    
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.days div:hover {
-    background-color: #698160;
-    color: white;
-}
-
-.prev-date, .next-date {
-    color: #ccc;
-}
 .profilePicDiv{
     width:68%;
     height: 25%;
@@ -463,11 +420,9 @@ tbody tr:hover {
 /* form */
 
 .formBody {
-    width: 80%;
-    height: 90%;
-    max-width: 600px;
+    width: 70%;
     margin: 2rem auto;
-    background-color: #fff;
+    background-color: var(--background);
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -477,35 +432,39 @@ tbody tr:hover {
 .formBody h2 {
     text-align: center;
     margin-bottom: 1.5rem;
-    font-size: 1.5rem;
 }
 
 label {
     display: block;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
     font-weight: bold;
 }
 
 input, select, textarea {
     width: 100%;
     padding: 0.75rem;
-    margin-bottom: 1rem;
+    margin: auto;
+    margin-top: -1rem;
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 1rem;
 }
 
-.submitBtn {
-    width: 100%;
-    padding: 1rem;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    font-size: 1rem;
+#submitBtn {
+    width: 50%;
+    background-color: var(--green);
+    color: var(--light-green);
+    margin-left: 10rem;
+    transition: all 0.4s;
+}
+#submitBtn:hover {
+    background-color: var(--weekday-bg);
+    color: var(--dark-green);
     cursor: pointer;
 }
-
-.submitBtn:hover {
-    background-color: #0056b3;
+#optionalNotes{
+    color: gray;
+}
+.req{
+    color: red;
 }
