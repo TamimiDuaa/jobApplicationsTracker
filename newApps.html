@@ -7,8 +7,6 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
-        <!-- to apply Chart.js to the page -->
-        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
         <script src="https://kit.fontawesome.com/ce6c91e8da.js" crossorigin="anonymous"></script>
     </head>
     <body>
@@ -38,7 +36,7 @@
 
                     <!-- Company Website URL  -->
                     <label for="CompanyURL">Company Website: <span class="req">*</span></label>
-                    <input type="text" name="CompanyURL" id="CompanyURL" required pattern="/^(https?:\/\/)?(www\.)?[a-zA-Z0-9-]{1,63}\.[a-zA-Z]{2,6}(\/[\w\-\.~:?#\[\]@!$&'()*+,;=]*)?$/">
+                    <input type="text" name="CompanyURL" id="CompanyURL"  required pattern="https?://.+">
                     <br><br>
 
                     <!-- Job Position -->
@@ -48,7 +46,7 @@
 
                     <!-- Job Description -->
                     <label for="description">Job Description: <span class="req">*</span></label>
-                    <textarea row="10" minlength="100" required placeholder="The Job Description..." id="description"></textarea>
+                    <textarea rows="10" minlength="50" placeholder="The Job Description..." id="description" required></textarea>
                     <br><br>
 
                     <!-- Application Date -->
